@@ -1,0 +1,17 @@
+import os
+import subprocess
+def download_vod(lacy):
+    output_file = f"{lacy}_latest.mp4"
+    command = [
+        "streamlink",
+        f"https://twitch.tv/{lacy}",
+        "best",
+        "-o",
+        output_file
+    ]
+    subprocess.run(command)
+    print(f"Downloaded VOD to {output_file}")
+
+if __name__ == "__main__":
+    channel = input("lacy: ")
+    download_vod(channel)
