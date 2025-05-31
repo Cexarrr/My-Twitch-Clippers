@@ -1,6 +1,4 @@
-mkdir my-twitch-clipper
-cd my-twitch-clipper
-git init
-echo "# My Twitch Clipper" >> README.md
-git add .
-git commit -m "Initial commit"
+# Clone the new repo to your computer
+git clone https://github.com/YOUR_USERNAME/twitch-auto-clipper.git
+# Move into the folder
+cd twitch-auto-clipper
